@@ -6,10 +6,11 @@
     "devtools_page": "devtools.html",
     "content_scripts": [{
         "matches": [
-          "http://*/*",
-          "https://*/*"
+          "http://*.finops.org/*",
+          "https://*.finops.org/*"
         ],
         "run_at": "document_idle",
+        "css": "mod.css",
         "js": [
           "content_script.js"
         ]
