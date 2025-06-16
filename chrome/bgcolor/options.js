@@ -13,6 +13,7 @@
 // limitations under the License.
 
 const buttonDiv = document.getElementById('buttonDiv');
+
 const buttonColors = ['#3aa757', '#e8453c', '#f9bb2d', '#4688f1'];
 
 const createColorButtons = (buttonColors) => {

@@ -4,6 +4,7 @@
   "description": "Fix an Extension!",
   "permissions": ["activeTab", "scripting", "storage"],
   "options_page": "options.html",
+  "devtools_page": "dt.html",
   "background": {
     "service_worker": "service-worker.js"
   },
