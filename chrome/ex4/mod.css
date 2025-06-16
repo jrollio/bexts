@@ -1,4 +1,14 @@
-body p {
+section[class*='-hero-'] ~ section:has(div.container)
+, section[class*='-hero-'] ~ section:has(div.container) :is(h1,h2,h3,h4,h5,h6)
+{
     background: #00281d;
     color: #fff;
+}
+section[class*='-hero-'] ~ section:has(div.container) li::before
+{
+    background: #fff;
+}
+section[class*='-hero-'] ~ section:has(div.container) a
+{
+    color: #009e76;
 }
