@@ -10,7 +10,7 @@
           "https://*.finops.org/*"
         ],
         "run_at": "document_idle",
-        "css": "mod.css",
+        "css": [ "mod.css" ],
         "js": [
           "content_script.js"
         ]
