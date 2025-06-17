@@ -1,5 +1,10 @@
-section[class*='-hero-'] ~ :is(div,section):has(div.container)
-, section[class*='-hero-'] ~ :is(div,section):has(div.container) :is(h1,h2,h3,h4,h5,h6)
+body > section.container
+,body > section.container :is(h1,h2,h3,h4,h5,h6) 
+,section.home-section
+,section > .container
+,section > .container :is(h1,h2,h3,h4,h5,h6)
+,section[class*='-hero-'] ~ :is(div,section):has(div.container)
+,section[class*='-hero-'] ~ :is(div,section):has(div.container) :is(h1,h2,h3,h4,h5,h6)
 {
     background: #00281d;
     color: #fff;
@@ -12,7 +17,15 @@ section[class*='-hero-'] ~ :is(div,section):has(div.container) a
 {
     color: #009e76;
 }
+
 section .container .capability-card {
     background: #000;
     color: #fff;
 }
+
+/* section.home-section:not(class*='green') img */
+section img
+{
+    background: #ffffff70;
+}
+
